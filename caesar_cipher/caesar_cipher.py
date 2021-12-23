@@ -1,8 +1,11 @@
+from corpus_loader import word_list, name_list
+
+
 def encrypt(text, key):
     cipher = ''
     
     for char in text:
-        # checks to see if string is empty ( no change happens)
+
         # checks upper case
         if char.isupper():
             cipher += chr((ord(char)+key-65) % 26 + 65)
@@ -18,3 +21,4 @@ def encrypt(text, key):
 def decrypt(encoded, key):
     return encrypt(encoded, -key)
 
+# def crack(encoded):
