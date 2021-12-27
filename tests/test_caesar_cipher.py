@@ -1,4 +1,4 @@
-from caesar_cipher.caesar_cipher import decrypt, encrypt
+from caesar_cipher.caesar_cipher import decrypt, encrypt, crack
 
 def test_encrypt_shift_1():
     actual = encrypt('car', 1)
@@ -34,17 +34,17 @@ def test_decrypt():
     expected = phrase
     assert actual == expected
     
-# def test_crack_phrase():
-#     phrase = "It was the best of times, it was the worst of times."
-#     encrypted = encrypt(phrase, 10)
-#     actual = crack(encrypted)
-#     expected = phrase
-#     assert actual == expected
+def test_crack_phrase():
+    phrase = "It was the best of times, it was the worst of times."
+    encrypted = encrypt(phrase, 10)
+    actual = crack(encrypted)
+    expected = phrase
+    assert actual == expected
 
 
-# def test_crack_nonsense():
-#     phrase = "Ix fhw txe fofg of ndhrl, it nad tho hndrk of allkd."
-#     encrypted = encrypt(phrase, 10)
-#     actual = crack(encrypted)
-#     expected = ""
-#     assert actual == expected
+def test_crack_nonsense():
+    phrase = "Ix fhw txe fofg of ndhrl, it nad tho hndrk of allkd."
+    encrypted = encrypt(phrase, 10)
+    actual = crack(encrypted)
+    expected = ""
+    assert actual == expected

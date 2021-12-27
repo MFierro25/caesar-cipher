@@ -12,3 +12,5 @@ PR:
 [Video explanation](https://www.youtube.com/watch?v=Ws5E2gCW4Hc)
 
 [chr and ord](https://www.educative.io/edpresso/what-are-ord-and-chr-functions-in-python)
+
+[Class Zoom](https://zoom.us/rec/share/29YkFY_bwVy49KdKFn07O8Q8IItYoXlU-hm3_nh_FSikUtztOe5kM71U_lxToa3I.i-a9wT6xoopWD-a0)
